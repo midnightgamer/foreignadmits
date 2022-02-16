@@ -1,0 +1,24 @@
+@import "variables";
+
+.task-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.taskContainer {
+    border-radius: 6px;
+    height: 100%;
+    padding: 10px;
+    background: #ebecf0;
+
+    h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: 400;
+    }
+}

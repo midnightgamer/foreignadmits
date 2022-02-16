@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NewTask from "./components/newTask/NewTask";
+import InProgress from "./components/InProgress/InProgress";
+import Completed from "./components/Completed/Completed";
+import Archived from "./components/Archived/Archived";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (<div className={'task-grid'}>
+        <NewTask/>
+        <InProgress/>
+        <Completed/>
+        <Archived/>
+    </div>);
 }
 
 export default App;
